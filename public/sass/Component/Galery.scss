@@ -1,0 +1,56 @@
+// ---- Import ---- //
+
+@import "variable.scss";
+
+section{
+  background-color: $black;
+  h1{
+    color: $yellow;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  .bandUp{
+    height: 70px;
+    background-image: url("../img/bandUp.png");
+    background-repeat:round;
+  }
+  .bandDown{
+    height: 70px;
+    background-image: url("../img/bandDown.png");
+    background-repeat:round;
+  }
+  .galery{
+    margin-top: 30px;
+    background-color: $black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+      margin: 1px;
+    }
+  }
+  button{
+    display: flex;
+    text-align: center;
+   padding: 10px;
+  }
+}
+
+// -------- //
+
+.effect {
+  background-color: $black;
+  .greyEffect {
+    height: 10px;
+    background-color: $grey;
+  }
+
+  .yellowEffect{
+    height: 10px;
+    background-color: $yellow;
+    transform: rotate(2deg);
+  }
+}

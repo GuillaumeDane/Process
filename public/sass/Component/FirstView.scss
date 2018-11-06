@@ -1,0 +1,21 @@
+// ---- Import ---- //
+
+@import "variable.scss";
+
+.logo{
+  background-image: url("./img/logo.svg");
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .wall{
+    z-index: -1;
+  }
+  img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,49 @@
+// ---- Import ---- //
+
+@import "variable.scss";
+
+// -------- //
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+
+  img {
+    height: 50px;
+    width: 200px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+
+    li {
+      margin: 15px;
+
+     a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        &:hover{
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 524px){
+  nav{
+    li{
+      display: none;
+    }
+  }
+}

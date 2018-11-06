@@ -1,0 +1,107 @@
+* {
+  font-family: sans-serif; }
+
+p {
+  font-weight: 250; }
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #343434;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1; }
+  nav img {
+    height: 50px;
+    width: 200px; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex; }
+    nav ul li {
+      margin: 15px; }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold; }
+        nav ul li a:hover {
+          color: #FFDE00; }
+
+@media screen and (max-width: 524px) {
+  nav li {
+    display: none; } }
+
+.form {
+  background-color: #8B8B8B;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .form .create_account, .form .login_account {
+    margin: 30px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .form .create_account h1, .form .login_account h1 {
+      color: #FFDE00; }
+    .form .create_account input, .form .login_account input {
+      margin: 5px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box; }
+
+.effect {
+  background-color: #343434; }
+  .effect .blackEffect {
+    height: 10px;
+    background-color: #343434; }
+  .effect .yellowEffect {
+    height: 10px;
+    background-color: #FFDE00; }
+
+footer .black_f {
+  background-color: #343434;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  footer .black_f .follow {
+    width: 350px; }
+    footer .black_f .follow p {
+      color: #FFDE00;
+      text-align: center; }
+    footer .black_f .follow ul {
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+      footer .black_f .follow ul li {
+        list-style-type: none;
+        width: 50px;
+        margin: 5px; }
+  footer .black_f .info {
+    width: 300px; }
+    footer .black_f .info p {
+      color: #FFDE00;
+      text-align: center; }
+    footer .black_f .info ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column; }
+      footer .black_f .info ul li {
+        color: white;
+        list-style-type: none;
+        text-align: center; }
+        footer .black_f .info ul li a {
+          color: #FFDE00;
+          text-decoration: none; }
+
+footer .yellow_f {
+  background-color: #FFDE00;
+  padding: 1px; }
+  footer .yellow_f p a {
+    margin-left: 10px;
+    font-size: 0.7em;
+    color: black;
+    text-decoration: none; }

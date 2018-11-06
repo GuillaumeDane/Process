@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1498 381">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffde00;
+      }
+
+      .cls-2 {
+        fill: #efefef;
+        font-size: 298px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Logo" transform="translate(-211 -355)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-1" width="419" height="25" transform="translate(445 621)"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" width="361" height="25" transform="translate(1266 598)"/>
+    <text id="Process" class="cls-2" transform="translate(211 355)"><tspan x="172.221" y="291">Process</tspan></text>
+    <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" width="361" height="25" transform="translate(960 553)"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="361" height="25" transform="translate(640 586)"/>
+  </g>
+</svg>

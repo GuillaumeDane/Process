@@ -1,0 +1,43 @@
+// ---- Import ---- //
+
+@import "variable.scss";
+
+// -------- //
+
+
+.form{
+  background-color: $grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .create_account, .login_account{
+    h1{
+      color: $yellow;
+    }
+    margin: 30px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    input{
+      margin: 5px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+  }
+}
+
+// -------- //
+
+.effect {
+  background-color: $black;
+  .blackEffect {
+    height: 10px;
+    background-color: $black;
+  }
+  .yellowEffect{
+    height: 10px;
+    background-color: $yellow;
+  }
+}
