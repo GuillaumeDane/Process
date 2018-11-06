@@ -6,16 +6,56 @@ var Schema = mongoose.Schema;
 // ==== music ==== //
 
 var musicSchema = new Schema({
-  name: String,
-  producer: String,
-  description: String,
-  date: Date,
-  bpm: Number,
-  tonality: String,
-  software: String,
-  vst: String,
-  hardware: String,
-  youtube: String
+
+  name:{
+    type: String,
+    require: true
+  },
+
+  producer:{
+    type: String,
+    require: true
+  },
+
+  description:{
+    type: String,
+    require: true
+  },
+
+  date:{
+    type: String,
+    require: true
+  },
+
+  bpm:{
+    type: Number,
+    require: true
+  },
+
+  tonality:{
+    type: String,
+    require: true
+  },
+
+  software:{
+    type: String,
+    require: true
+  },
+
+  vst:{
+    type: String,
+    require: true
+  },
+
+  hardware:{
+    type: String,
+    require: true
+  },
+
+  youtube:{
+    type: String,
+    require: true
+  }
 });
 
 var music = mongoose.model('music', musicSchema);

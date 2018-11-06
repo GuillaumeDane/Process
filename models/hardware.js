@@ -6,8 +6,17 @@ var Schema = mongoose.Schema;
 // ==== hardware ==== //
 
 var hardwareSchema = new Schema({
-  name: String,
-  description: String
+
+  name:{
+    type: String,
+    require: true
+  },
+
+  description:{
+    type: String,
+    require: true
+  }
+
 })
 
 var hardware = mongoose.model('hardware', hardwareSchema);

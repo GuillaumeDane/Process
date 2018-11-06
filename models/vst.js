@@ -6,7 +6,12 @@ var Schema = mongoose.Schema;
 // ==== vst ==== //
 
 var vstSchema = new Schema({
-  name: String,
+
+  name:{
+    type: String,
+    require: true
+  }
+
 })
 
 var vst = mongoose.model('mongoBase', vstSchema);

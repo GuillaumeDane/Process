@@ -6,8 +6,17 @@ var Schema = mongoose.Schema;
 // ==== software ==== //
 
 var softwareSchema = new Schema({
-  name: String,
-  description: String
+
+  name:{
+    type: String,
+    require: true
+  },
+
+  description:{
+    type: String,
+    require: true
+  },
+
 })
 
 var software = mongoose.model('mongoBase', softwareSchema);

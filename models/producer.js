@@ -6,9 +6,22 @@ var Schema = mongoose.Schema;
 // ==== producer ==== //
 
 var producerSchema = new Schema({
-  name: String,
-  email: String,
-  music: String
+
+  name:{
+    type: String,
+    require: true
+  },
+
+  email:{
+    type: String,
+    require: true
+  },
+
+  music:{
+    type: String,
+    require: true
+  }
+  
 })
 
 var producer = mongoose.model('producer', producerSchema);
