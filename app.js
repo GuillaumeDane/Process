@@ -5,10 +5,23 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const hbs = require('express-handlebars');
 
+// ==== Database ==== //
+
+const config = require('./config/database');
+
+// ==== init express ==== //
+
+ const app = express();
+
+// ==== Body parser ==== //
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 // ==== MongoDB conect ==== //
 
-mongoose.connect(config.database, { useNewUrlParser: true })
-let db = mongoose.connection;
+ mongoose.connect(config.database, { useNewUrlParser: true })
+ let db = mongoose.connection;
 
 // ==== Routes module ==== //
 
@@ -16,10 +29,6 @@ const indexRoutes = require('./routes/index');
 const loginRoutes = require('./routes/login');
 const homeRoutes = require('./routes/home');
 const createSongsRoutes = require('./routes/createSongs');
-
-// ==== init express ==== //
-
- const app = express();
 
 // ==== hbs parameter ==== //
 
@@ -42,6 +51,9 @@ app.use('/createSongs', createSongsRoutes);
 
 // ==== Server init ==== //
 
-app.listen(3000, function(){
-  console.log('tu écoute sur le port 3000 bitch !!!');
-})
+const hostname = 'localhost';
+const port = 3000;
+
+app.listen(port, hostname, function(){
+	console.log("Mon serveur fonctionne sur http://" + hostname + ":" + port);
+});
