@@ -9,6 +9,23 @@ const hbs = require('express-handlebars');
 
 const config = require('./config/database');
 
+// ==== MongoDB conect ==== //
+
+ mongoose.connect(config.database, { useNewUrlParser: true })
+ let db = mongoose.connection;
+
+// ==== MongoDB conection test ==== //
+
+db.once('open', function(){
+    console.log('Connected to MongoDB');
+});
+
+db.on('error', function(err)
+{
+    console.log(err);
+});
+
+
 // ==== init express ==== //
 
  const app = express();
@@ -17,11 +34,6 @@ const config = require('./config/database');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-// ==== MongoDB conect ==== //
-
- mongoose.connect(config.database, { useNewUrlParser: true })
- let db = mongoose.connection;
 
 // ==== Routes module ==== //
 
