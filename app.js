@@ -5,6 +5,11 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const hbs = require('express-handlebars');
 
+// ==== MongoDB conect ==== //
+
+mongoose.connect(config.database, { useNewUrlParser: true })
+let db = mongoose.connection;
+
 // ==== Routes module ==== //
 
 const indexRoutes = require('./routes/index');
