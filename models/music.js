@@ -23,7 +23,7 @@ var musicSchema = new Schema({
   },
 
   date:{
-    type: String,
+    type: Date,
     require: true
   },
 
