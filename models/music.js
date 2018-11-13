@@ -1,60 +1,45 @@
 // ==== modules ==== //
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
 
 // ==== music ==== //
 
-var musicSchema = new Schema({
+var musicSchema = mongoose.Schema({
 
   name:{
-    type: String,
-    require: true
+    type: String
   },
 
   producer:{
-    type: String,
-    require: true
+    type: String
   },
 
   description:{
-    type: String,
-    require: true
+    type: String
   },
 
   date:{
-    type: Date,
-    require: true
+    type: Date
   },
 
   bpm:{
-    type: Number,
-    require: true
+    type: Number
   },
 
   tonality:{
-    type: String,
-    require: true
+    type: String
   },
 
   software:{
-    type: String,
-    require: true
+    type: String
   },
 
   vst:{
-    type: String,
-    require: true
-  },
+    type: String
 
+  },
   hardware:{
-    type: String,
-    require: true
-  },
-
-  youtube:{
-    type: String,
-    require: true
+    type: String
   }
 });
 
@@ -62,4 +47,4 @@ var music = mongoose.model('music', musicSchema);
 
 // ==== Export ==== //
 
-module.export = music;
+module.exports = music;
