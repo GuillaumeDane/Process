@@ -1,0 +1,93 @@
+// ---- Import ---- //
+
+@import "variable.scss";
+
+// ---- Info ---- //
+
+.info{
+  background-color: $grey;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  .cover{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+}
+
+// ---- software ---- //
+
+.software{
+  background-color: $yellow;
+  display: flex;
+  justify-content: space-around;
+  .soft_img{
+    margin: 10px;
+  }
+  .soft_info{
+    text-align: center;
+  }
+}
+
+// ---- vst ---- //
+
+.vst{
+  display: flex;
+  flex-wrap: wrap;
+  .vst_a, .vst_d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $black;
+    width: 50vw;
+  }
+    .vst_c, .vst_b{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $grey;
+      width: 50vw;
+    }
+    img{
+      margin: 10px;
+    }
+  }
+  
+// ---- fx ---- //
+
+.fx{
+  height: 10px;
+  width: 100vw;
+  background-color: $yellow;
+}
+
+// ---- hardware ---- //
+
+.hardware{
+  display: flex;
+  flex-wrap: wrap;
+  .hard_a, .hard_d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $black;
+    width: 50vw;
+  }
+    .hard_c, .hard_b{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $grey;
+      width: 50vw;
+    }
+    img{
+      margin: 10px;
+    }
+  }
+
+// ---- process ---- //

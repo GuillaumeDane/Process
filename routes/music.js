@@ -8,6 +8,7 @@ var router = express.Router();
 router.get('/', function(req, res){
   res.render('music.hbs', {
     title: 'Home',
+    css: 'css/music.css'
   });
 });
 

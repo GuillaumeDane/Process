@@ -1,0 +1,143 @@
+* {
+  font-family: sans-serif; }
+
+p {
+  font-weight: 250; }
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #343434;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1; }
+  nav img {
+    height: 50px;
+    width: 200px; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex; }
+    nav ul li {
+      margin: 15px; }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold; }
+        nav ul li a:hover {
+          color: #FFDE00; }
+
+@media screen and (max-width: 524px) {
+  nav li {
+    display: none; } }
+
+.info {
+  background-color: #8B8B8B;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap; }
+  .info .cover {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px; }
+
+.software {
+  background-color: #FFDE00;
+  display: flex;
+  justify-content: space-around; }
+  .software .soft_img {
+    margin: 10px; }
+  .software .soft_info {
+    text-align: center; }
+
+.vst {
+  display: flex;
+  flex-wrap: wrap; }
+  .vst .vst_a, .vst .vst_d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #343434;
+    width: 50vw; }
+  .vst .vst_c, .vst .vst_b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #8B8B8B;
+    width: 50vw; }
+  .vst img {
+    margin: 10px; }
+
+.fx {
+  height: 10px;
+  width: 100vw;
+  background-color: #FFDE00; }
+
+.hardware {
+  display: flex;
+  flex-wrap: wrap; }
+  .hardware .hard_a, .hardware .hard_d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #343434;
+    width: 50vw; }
+  .hardware .hard_c, .hardware .hard_b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #8B8B8B;
+    width: 50vw; }
+  .hardware img {
+    margin: 10px; }
+
+footer .black_f {
+  background-color: #343434;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  footer .black_f .follow {
+    width: 350px; }
+    footer .black_f .follow p {
+      color: #FFDE00;
+      text-align: center; }
+    footer .black_f .follow ul {
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+      footer .black_f .follow ul li {
+        list-style-type: none;
+        width: 50px;
+        margin: 5px; }
+  footer .black_f .info {
+    width: 300px; }
+    footer .black_f .info p {
+      color: #FFDE00;
+      text-align: center; }
+    footer .black_f .info ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column; }
+      footer .black_f .info ul li {
+        color: white;
+        list-style-type: none;
+        text-align: center; }
+        footer .black_f .info ul li a {
+          color: #FFDE00;
+          text-decoration: none; }
+
+footer .yellow_f {
+  background-color: #FFDE00;
+  padding: 1px; }
+  footer .yellow_f p a {
+    margin-left: 10px;
+    font-size: 0.7em;
+    color: black;
+    text-decoration: none; }

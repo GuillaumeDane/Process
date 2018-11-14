@@ -19,6 +19,76 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/config/database.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/config/database-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/models/createUser.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/models/createUser-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/models/hardware.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/models/hardware-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/models/music.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/models/music-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/models/producer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/models/producer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/models/software.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/models/software-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/models/vst.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/models/vst-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -40,6 +110,66 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/public/css/createSongs.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/css/createSongs-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/css/home.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/css/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/css/login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/css/login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/css/music.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/css/music-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/css/normalize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/css/normalize-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/public/css/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/css/style-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/public/img/artist.png": {
 		"ft": 32768,
@@ -226,6 +356,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/public/sass/Component/Music.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/public/sass/Component/Music.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/public/sass/Component/Nav.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -291,6 +434,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/public/sass/music.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/public/css/music.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
 	"/public/sass/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -344,6 +500,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/routes/music.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/routes/music-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/views/createSongs.hbs": {
 		"cB": 0,
 		"ft": 8192,
@@ -372,6 +538,13 @@
 		"oAP": "/views/login.hbs",
 		"oF": 0
 		},
+	"/views/music.hbs": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/views/music.hbs",
+		"oF": 0
+		},
 	"/views/template/layout.hbs": {
 		"cB": 0,
 		"ft": 8192,
@@ -386,7 +559,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 563102986.13323295,
-	"displayValue": "ProcessUp",
+	"displayValue": "Process",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-angryBaby",
 	"iconImageWasSetByUser": 0
