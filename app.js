@@ -41,6 +41,7 @@ const indexRoutes = require('./routes/index');
 const loginRoutes = require('./routes/login');
 const homeRoutes = require('./routes/home');
 const createSongsRoutes = require('./routes/createSongs');
+const musicPageRoutes = require('./routes/music');
 
 // ==== hbs parameter ==== //
 
@@ -60,7 +61,7 @@ app.use('/', indexRoutes);
 app.use('/login', loginRoutes);
 app.use('/home', homeRoutes);
 app.use('/createSongs', createSongsRoutes);
-
+app.use('/musicPage', musicPageRoutes);
 // ==== Server init ==== //
 
 const hostname = 'localhost';
