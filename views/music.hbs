@@ -9,77 +9,78 @@
 
 <main>
 
-  <section class="info">
+  <section class="music">
     <div class="cover">
       <div class="img_info">
-        <img src="http://placehold.it/250x250" alt="">
+        <img src="{{music.cover}}" alt="">
       </div>
       <div>
-        <h1>Name</h1>
-        <h2>Producteur</h2>
-        <p>Date</p>
+        <h1>{{music.name}}</h1>
+        <h2>{{music.producer}}</h2>
+        <p>{{music.date}}</p>
       </div>
     </div>
     <div class="info_info">
-      <p class="">Bpm</p>
-      <p>Tonality</p>
+      <p class="">{{music.bpm}}</p>
+      <p>{{music.tonality}}</p>
     </div>
   </section>
 
   <section class="software">
     <div class="soft_img">
-      <img src="http://placehold.it/150x150" alt="">
+      <img src="http://placehold.it/150x1" alt="">
     </div>
     <div class="soft_info">
-      <h2>Ableton</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2>{{softwares.name}}</h2>
+      <p>{{software.description}}</p>
     </div>
   </section>
 
   <section class="vst">
-    <div class="vst_a">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Soft</p>
-    </div>
-    <div class="vst_b">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Soft</p>
-    </div>
-    <div class="vst_c">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Soft</p>
-    </div>
-    <div class="vst_d">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Soft</p>
-    </div>
+    {{#each vst}}
+      <div class="vst_a">
+        <img src="{{this.img}}" alt="">
+        <p>{{this.name}}</p>
+      </div>
+    {{/each}}
   </section>
 
-  <div class="fx"></div>
-
   <section class="hardware">
-    <div class="hard_a">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Hard</p>
-    </div>
-    <div class="hard_b">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Hard</p>
-    </div>
-    <div class="hard_c">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Hard</p>
-    </div>
-    <div class="hard_d">
-      <img src="http://placehold.it/200x150" alt="">
-      <p>Hard</p>
-    </div>
+    {{#each hardware}}
+      <div class="vst_a">
+        <img src="{{this.img}}" alt="">
+        <p>{{this.name}}</p>
+      </div>
+    {{/each}}
   </section>
 
   <div class="fx"></div>
 
   <section class="process">
-
+    <p>{{music.process}}</p>
   </section>
 </main>
+
+<footer>
+  <div class="black_f">
+    <div class="follow">
+      <p>Social network:</p>
+      <ul>
+        <li><a href="#"><img src="/img/facebook.svg" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+        <li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+      </ul>
+    </div>
+    <div class="info">
+      <p>Contact Us:</p>
+      <ul>
+        <li>Contact: <a href="#">Process.com</a></li>
+        <li>Contact: <a href="#">Process.com</a></li>
+        <li>Contact: <a href="#">Process.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="yellow_f">
+    <p><a href="#">Legal imformation</a></p>
+  </div>
+</footer>

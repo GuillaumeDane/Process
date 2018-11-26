@@ -1,6 +1,6 @@
 <header>
   <nav>
-    <a href="/"><img src="img/logo.svg" alt=""><a/>
+    <a href="/"><img src="img/logo.svg" alt=""><a />
   </nav>
 </header>
 
@@ -18,43 +18,38 @@
     </div>
     <!-- -->
     <div class="galery">
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-    </div>
+      {{#each music}}
+        <div class="container">
+          <a href="/musicPage/{{_id}}"><img src="{{this.cover}}" alt=""></a>
+          <div class="title">
+            <p>{{this.name}}</p>
+            <p>{{this.producer}}</p>
+          </div>
+        </div>
+      {{/each}}
   </section>
   <section>
-      <!-- FX -->
+    <!-- FX -->
     <div class="effect">
       <div class="yellowEffect"></div>
     </div>
-      <!-- -->
+    <!-- -->
     <h1>Artist</h1>
-      <!-- FX -->
+    <!-- FX -->
     <div class="effect">
       <div class="yellowEffect"></div>
     </div>
-      <!-- -->
+    <!-- -->
     <div class="galery">
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-    </div>
-    <button type="button" name="button"><a href="/producer">Watch more</a></button>
+      {{#each music}}
+        <div class="container">
+          <a href="/musicPage/{{_id}}"><img src="{{this.cover}}" alt=""></a>
+          <div class="title">
+            <p>{{this.name}}</p>
+            <p>{{this.producer}}</p>
+          </div>
+        </div>
+      {{/each}}
   </section>
   <section>
     <!-- FX -->
@@ -69,18 +64,15 @@
     </div>
     <!-- -->
     <div class="galery">
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-      <a href="#"><img src="http://placehold.it/250x250" alt=""></a>
-    </div>
-    <button type="button" name="button">Watch more</button>
+      {{#each music}}
+        <div class="container">
+          <a href="/musicPage/{{_id}}"><img src="{{this.cover}}" alt=""></a>
+          <div class="title">
+            <p>{{this.name}}</p>
+            <p>{{this.producer}}</p>
+          </div>
+        </div>
+      {{/each}}
     <!-- FX -->
     <div class="effect">
       <div class="greyEffect"></div>

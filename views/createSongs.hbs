@@ -10,80 +10,71 @@
 <main>
   <form class="" action="" method="post">
     <div class="music">
+      <input type="text" name="cover" placeholder="Youre cover URL" value="">
       <input type="text" name="name" placeholder="Name" value="">
       <input type="text" name="producer" placeholder="Producer" value="">
-      <input type="text" name="date" placeholder="Date" value="">
       <input type="text" name="bpm" placeholder="BPM" value="">
       <input type="text" name="tonality" placeholder="Tonality" value="">
     </div>
     <div class="soft">
       <p>Software :</p>
       <select name="software">
-        <option>Choice 1</option>
-        <option>Choice 2</option>
-        <option>Choice 3</option>
-        <option>Choice 4</option>
+        {{#each software}}
+          <option>{{this.name}}</option>
+        {{/each}}
       </select>
     </div>
     <div class="list">
       <div class="vst">
         <p>vst n°1:</p>
         <select name="vst">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each vst}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
         <p>vst n°2:</p>
         <select name="vst">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each vst}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
         <p>vst n°3:</p>
         <select name="vst">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each vst}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
         <p>vst n°4:</p>
         <select name="vst">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each vst}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
       </div>
       <div class="hard">
         <p>hardware n°1:</p>
         <select name="hardware">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each hardware}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
         <p>hardware n°2:</p>
         <select name="hardware">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each hardware}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
         <p>hardware n°3:</p>
         <select name="hardware">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each hardware}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
         <p>hardware n°4:</p>
         <select name="hardware">
-          <option>Choice 1</option>
-          <option>Choice 2</option>
-          <option>Choice 3</option>
-          <option>Choice 4</option>
+          {{#each hardware}}
+            <option>{{this.name}}</option>
+          {{/each}}
         </select>
       </div>
     </div>

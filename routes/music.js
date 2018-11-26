@@ -3,12 +3,35 @@
 var express = require('express');
 var router = express.Router();
 
+// ==== Models ==== //
+
+var musicSchema = require('../models/music');
+var vstSchema = require('../models/vst');
+var softwares = require('../models/software');
+var hardwareSchema = require('../models/hardware');
+
 // ==== indexRoute ==== //
 
-router.get('/', function(req, res){
-  res.render('music.hbs', {
-    title: 'Home',
-    css: 'css/music.css'
+router.get('/', function(req, res) {
+  softwares.find(function(err, results) {
+    vstSchema.find(function(err, results2) {
+      hardwareSchema.find(function(err, results3) {
+        musicSchema.find(function(err, results4) {
+          if (err) {
+            throw err;
+          } else {
+            res.render('music.hbs', {
+              title: 'Music',
+              css: 'css/music.css',
+              softwares: results,
+              vst: results2,
+              hardware: results3,
+              music: results4
+            });
+          }
+        });
+      });
+    });
   });
 });
 

@@ -7,7 +7,7 @@ p {
 nav {
   height: 50px;
   width: 100%;
-  background-color: #343434;
+  background-color: #333;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -52,7 +52,7 @@ nav {
 section {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #343434; }
+  background-color: #333; }
   section h2 {
     color: #FFDE00;
     text-align: center;
@@ -79,7 +79,7 @@ img {
   height: auto; }
 
 .effect {
-  background-color: #343434; }
+  background-color: #333; }
   .effect .greyEffect {
     height: 10px;
     background-color: #8B8B8B; }
@@ -89,7 +89,7 @@ img {
     transform: rotate(4deg); }
 
 footer .black_f {
-  background-color: #343434;
+  background-color: #333;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }

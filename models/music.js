@@ -10,16 +10,16 @@ var musicSchema = mongoose.Schema({
     type: String
   },
 
+  cover:{
+    type: String
+  },
+
   producer:{
     type: String
   },
 
   description:{
     type: String
-  },
-
-  date:{
-    type: Date
   },
 
   bpm:{
@@ -36,9 +36,13 @@ var musicSchema = mongoose.Schema({
 
   vst:{
     type: String
-
   },
+
   hardware:{
+    type: String
+  },
+
+  cover:{
     type: String
   }
 });

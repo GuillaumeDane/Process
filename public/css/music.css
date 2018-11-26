@@ -7,7 +7,7 @@ p {
 nav {
   height: 50px;
   width: 100%;
-  background-color: #343434;
+  background-color: #333;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -34,12 +34,12 @@ nav {
   nav li {
     display: none; } }
 
-.info {
+.music {
   background-color: #8B8B8B;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap; }
-  .info .cover {
+  .music .cover {
     display: flex;
     flex-wrap: wrap;
     margin: 10px; }
@@ -61,7 +61,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #343434;
+    background-color: #333;
     width: 50vw; }
   .vst .vst_c, .vst .vst_b {
     display: flex;
@@ -71,7 +71,9 @@ nav {
     background-color: #8B8B8B;
     width: 50vw; }
   .vst img {
-    margin: 10px; }
+    margin: 10px;
+    height: 250px;
+    width: 400px; }
 
 .fx {
   height: 10px;
@@ -86,7 +88,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #343434;
+    background-color: #333;
     width: 50vw; }
   .hardware .hard_c, .hardware .hard_b {
     display: flex;
@@ -96,10 +98,15 @@ nav {
     background-color: #8B8B8B;
     width: 50vw; }
   .hardware img {
-    margin: 10px; }
+    margin: 10px;
+    height: 250px;
+    width: 400px; }
+
+.process {
+  background: #8B8B8B; }
 
 footer .black_f {
-  background-color: #343434;
+  background-color: #333;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }

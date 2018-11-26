@@ -5,17 +5,20 @@ var Schema = mongoose.Schema;
 
 // ==== vst ==== //
 
-var vstSchema = new Schema({
+var vst = mongoose.Schema({
 
   name:{
     type: String,
-    require: true
+  },
+
+  img:{
+    type: String,
   }
 
 })
 
-var vst = mongoose.model('mongoBase', vstSchema);
+var vst = mongoose.model('vsts', vst);
 
 // ==== Export ==== //
 
-module.export = software;
+module.exports = vst;

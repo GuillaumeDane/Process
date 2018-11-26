@@ -5,22 +5,23 @@ var Schema = mongoose.Schema;
 
 // ==== software ==== //
 
-var softwareSchema = new Schema({
+var software = mongoose.Schema({
 
   name:{
     type: String,
-    require: true
   },
 
   description:{
     type: String,
-    require: true
   },
 
-})
+  img:{
+    type: String,
+  }
+});
 
-var software = mongoose.model('mongoBase', softwareSchema);
+var software = mongoose.model('softwares', software);
 
 // ==== Export ==== //
 
-module.export = software;
+module.exports = software;
