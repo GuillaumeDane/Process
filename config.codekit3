@@ -317,6 +317,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/public/sass/Component/Fx.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/public/sass/Component/Fx.css",
+		"oF": 1,
+		"oS": 0,
+		"uL": 1
+		},
 	"/public/sass/Component/Galery.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -490,6 +503,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/routes/insertData.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/routes/insertData-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/routes/login.js": {
 		"ft": 64,
 		"ma": 0,
@@ -529,6 +552,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/views/index.hbs",
+		"oF": 0
+		},
+	"/views/insertData.hbs": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/views/insertData.hbs",
 		"oF": 0
 		},
 	"/views/login.hbs": {

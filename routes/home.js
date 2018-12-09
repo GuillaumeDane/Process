@@ -11,11 +11,11 @@ var musicSchema = require('../models/music');
 
 
 router.get('/', function(req, res) {
-      musicSchema.find(function(err, results1) {
-        res.render('home.hbs', {
-          title: 'Home',
-          css: 'css/home.css',
-          music: results1
+  musicSchema.find(function(err, results1) {
+    res.render('home.hbs', {
+      title: 'Home',
+      css: 'css/home.css',
+      music: results1
     });
   });
 });

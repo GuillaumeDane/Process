@@ -1,49 +1,62 @@
 // ==== modules ==== //
 
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 // ==== music ==== //
 
+
 var musicSchema = mongoose.Schema({
 
-  name:{
-    type: String
+  _id: {
+    type: mongoose.Schema.Types.ObjectId,
   },
 
-  cover:{
-    type: String
+  name: {
+    type: String,
   },
 
-  producer:{
-    type: String
+  cover: {
+    type: String,
   },
 
-  description:{
-    type: String
+  producer: {
+    type: String,
   },
 
-  bpm:{
-    type: Number
+  description: {
+    type: String,
   },
 
-  tonality:{
-    type: String
+  bpm: {
+    type: Number,
   },
 
-  software:{
-    type: String
+  tonality: {
+    type: String,
   },
 
-  vst:{
-    type: String
+  software: {
+//  type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'softwares'
   },
 
-  hardware:{
-    type: String
+  vst: {
+//  type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'vsts'
+
   },
 
-  cover:{
-    type: String
+  hardware: {
+//  type: String,    
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'hardwares'
+  },
+
+  cover: {
+    type: String,
   }
 });
 

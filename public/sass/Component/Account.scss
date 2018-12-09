@@ -4,7 +4,6 @@
 
 // -------- //
 
-
 .form{
   background-color: $grey;
   display: flex;
@@ -25,19 +24,5 @@
       margin: 8px 0;
       box-sizing: border-box;
     }
-  }
-}
-
-// -------- //
-
-.effect {
-  background-color: $black;
-  .blackEffect {
-    height: 10px;
-    background-color: $black;
-  }
-  .yellowEffect{
-    height: 10px;
-    background-color: $yellow;
   }
 }

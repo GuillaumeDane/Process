@@ -37,7 +37,7 @@ router.post('/', function(req, res) {
   music.tonality = req.body.tonality;
   music.software = req.body.software;
   music.vst = req.body.vst;
-  music.hardware = req.body.hardware;
+  music.hardware = req.body.music;
   music.cover = req.body.cover;
   music.save(function(err) {
     if (err) {

@@ -5,7 +5,7 @@ var router = express.Router();
 
 // ==== indexRoute ==== //
 
-router.get('/', function(req, res){
+router.get('/', function(req, res) {
   res.render('index.hbs', {
     title: 'Process',
     css: 'css/style.css'

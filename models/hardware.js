@@ -5,19 +5,23 @@ var Schema = mongoose.Schema;
 
 // ==== hardware ==== //
 
-var hardware = mongoose.Schema({
+var hardwareSchema = Schema({
 
-  name:{
+  _id: {
+    type: mongoose.Schema.Types.ObjectId,
+  },
+
+  name: {
     type: String,
   },
 
-  img:{
+  img: {
     type: String,
   }
 
 })
 
-var hardware = mongoose.model('hardwares', hardware);
+var hardware = mongoose.model('hardwares', hardwareSchema);
 
 // ==== Export ==== //
 

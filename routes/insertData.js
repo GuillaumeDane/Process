@@ -5,23 +5,24 @@ var router = express.Router();
 
 // ==== models ==== //
 
-var createUserSchema = require('../models/createUser');
+var software = require('../models/software');
 
 // ==== indexRoute ==== //
 
+
 router.get('/', function(req, res) {
-  res.render('login.hbs', {
-    title: 'Login',
-    css: 'css/login.css'
+    res.render('insertData.hbs', {
+      title: '',
+      css: '',
   });
 });
 
 router.post('/', function(req, res) {
-  let createUser = new createUserSchema();
-  createUser.name = req.body.name;
-  createUser.email = req.body.email;
-  createUser.password = req.body.password;
-  createUser.save(function(err) {
+  let input = new software();
+  input.name = req.body.name;
+  input.description = req.body.description;
+  input.img = req.body.img;
+  input.save(function(err) {
     if (err) {
       console.log(err);
       return;

@@ -1,6 +1,9 @@
 <header>
   <nav>
     <a href="/"><img src="img/logo.svg" alt=""><a />
+      <ul>
+        <li><a href="/createSongs">Create</a></li>
+      </ul>
   </nav>
 </header>
 
@@ -28,57 +31,6 @@
         </div>
       {{/each}}
   </section>
-  <section>
-    <!-- FX -->
-    <div class="effect">
-      <div class="yellowEffect"></div>
-    </div>
-    <!-- -->
-    <h1>Artist</h1>
-    <!-- FX -->
-    <div class="effect">
-      <div class="yellowEffect"></div>
-    </div>
-    <!-- -->
-    <div class="galery">
-      {{#each music}}
-        <div class="container">
-          <a href="/musicPage/{{_id}}"><img src="{{this.cover}}" alt=""></a>
-          <div class="title">
-            <p>{{this.name}}</p>
-            <p>{{this.producer}}</p>
-          </div>
-        </div>
-      {{/each}}
-  </section>
-  <section>
-    <!-- FX -->
-    <div class="effect">
-      <div class="yellowEffect"></div>
-    </div>
-    <!-- -->
-    <h1>Songs</h1>
-    <!-- FX -->
-    <div class="effect">
-      <div class="yellowEffect"></div>
-    </div>
-    <!-- -->
-    <div class="galery">
-      {{#each music}}
-        <div class="container">
-          <a href="/musicPage/{{_id}}"><img src="{{this.cover}}" alt=""></a>
-          <div class="title">
-            <p>{{this.name}}</p>
-            <p>{{this.producer}}</p>
-          </div>
-        </div>
-      {{/each}}
-    <!-- FX -->
-    <div class="effect">
-      <div class="greyEffect"></div>
-    </div>
-    <!-- -->
-  </section>
 
 </main>
 <footer>
@@ -101,6 +53,6 @@
     </div>
   </div>
   <div class="yellow_f">
-    <p><a href="#">Legal imformation</a></p>
+    <p><a href="#">Legal information</a></p>
   </div>
 </footer>

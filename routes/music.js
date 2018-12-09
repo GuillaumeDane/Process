@@ -10,20 +10,21 @@ var vstSchema = require('../models/vst');
 var softwares = require('../models/software');
 var hardwareSchema = require('../models/hardware');
 
+
 // ==== indexRoute ==== //
 
-router.get('/', function(req, res) {
-  softwares.find(function(err, results) {
+router.get('/:id', function(req, res) {
+  musicSchema.find(function(err, results) {
     vstSchema.find(function(err, results2) {
       hardwareSchema.find(function(err, results3) {
-        musicSchema.find(function(err, results4) {
+        musicSchema.findById(req.params.id, function(err, results4) {
           if (err) {
             throw err;
           } else {
             res.render('music.hbs', {
               title: 'Music',
-              css: 'css/music.css',
-              softwares: results,
+              css: '/css/music.css',
+              software: results,
               vst: results2,
               hardware: results3,
               music: results4
@@ -33,7 +34,9 @@ router.get('/', function(req, res) {
       });
     });
   });
+  console.log(hardwareSchema);
 });
+
 
 // ==== Export ==== //
 

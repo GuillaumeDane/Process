@@ -1,0 +1,19 @@
+// ---- Import ---- //
+
+@import "variable.scss";
+
+// ---- Fx ---- //
+
+.effect {
+  background-color: $black;
+  .greyEffect {
+    height: 10px;
+    background-color: $grey;
+  }
+
+  .yellowEffect{
+    height: 10px;
+    background-color: $yellow;
+    transform: rotate(4deg);
+  }
+}

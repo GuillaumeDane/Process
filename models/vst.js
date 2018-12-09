@@ -7,6 +7,10 @@ var Schema = mongoose.Schema;
 
 var vst = mongoose.Schema({
 
+  _id:{
+  type: mongoose.Schema.Types.ObjectId,
+},
+
   name:{
     type: String,
   },
@@ -15,7 +19,7 @@ var vst = mongoose.Schema({
     type: String,
   }
 
-})
+});
 
 var vst = mongoose.model('vsts', vst);
 
