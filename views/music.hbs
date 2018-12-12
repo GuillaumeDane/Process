@@ -37,19 +37,21 @@
   </section>
 
   <section class="vst">
-    {{#each vst}}
-      <div class="vst_a">
-        <img src="{{this.img}}" alt="">
-        <p>{{this.name}}</p>
+    {{#each music}}
+      <div class="vst_item">
+        <div class="vst_a">
+          <img src="{{this.img}}" alt="">
+          <p class="title">{{this.vst}}</p>
+        </div>
       </div>
     {{/each}}
   </section>
 
   <section class="hardware">
     {{#each hardware}}
-      <div class="vst_a">
+      <div class="hardware_item">
         <img src="{{this.img}}" alt="">
-        <p>{{this.name}}</p>
+        <p class="title">{{this.name}}</p>
       </div>
     {{/each}}
   </section>

@@ -43,6 +43,9 @@ nav {
     display: flex;
     flex-wrap: wrap;
     margin: 10px; }
+    .music .cover img {
+      height: 300px;
+      width: auto; }
 
 .software {
   background-color: #FFDE00;
@@ -54,26 +57,28 @@ nav {
     text-align: center; }
 
 .vst {
+  background-color: #333;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
-  flex-wrap: wrap; }
-  .vst .vst_a, .vst .vst_d {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #333;
-    width: 50vw; }
-  .vst .vst_c, .vst .vst_b {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #8B8B8B;
-    width: 50vw; }
-  .vst img {
-    margin: 10px;
-    height: 250px;
-    width: 400px; }
+  flex-wrap: wrap;
+  justify-content: center; }
+  .vst .vst_item {
+    position: relative;
+    padding: 0.3rem;
+    height: 300px;
+    width: 450px;
+    box-sizing: border-box; }
+    .vst .vst_item img {
+      width: auto;
+      height: 300px; }
+    .vst .vst_item .title {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      margin: 5px;
+      padding: 0px 10px;
+      position: absolute;
+      bottom: 0; }
 
 .fx {
   height: 10px;
@@ -81,26 +86,28 @@ nav {
   background-color: #FFDE00; }
 
 .hardware {
+  background-color: #333;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
-  flex-wrap: wrap; }
-  .hardware .hard_a, .hardware .hard_d {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #333;
-    width: 50vw; }
-  .hardware .hard_c, .hardware .hard_b {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #8B8B8B;
-    width: 50vw; }
-  .hardware img {
-    margin: 10px;
-    height: 250px;
-    width: 400px; }
+  flex-wrap: wrap;
+  justify-content: center; }
+  .hardware .hardware_item {
+    position: relative;
+    padding: 0.3rem;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box; }
+    .hardware .hardware_item img {
+      width: auto;
+      height: 300px; }
+    .hardware .hardware_item .title {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      margin: 5px;
+      padding: 0px 10px;
+      position: absolute;
+      bottom: 0; }
 
 .process {
   background: #8B8B8B; }

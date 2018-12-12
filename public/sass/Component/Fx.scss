@@ -17,3 +17,20 @@
     transform: rotate(4deg);
   }
 }
+
+// ---- Line ---- //
+
+.line_yellow{
+  background-color: $yellow;
+  height: 10px;
+}
+
+.line_black{
+  background-color: $black;
+  height: 10px;
+}
+
+.line_grey{
+  background-color: $grey;
+  height: 10px;
+}

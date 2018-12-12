@@ -29,62 +29,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/models/createUser.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/models/createUser-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/models/hardware.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/models/hardware-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/models/music.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/models/music-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/models/producer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/models/producer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/models/software.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/models/software-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/models/vst.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/models/vst-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -503,16 +453,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/routes/insertData.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/routes/insertData-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/routes/login.js": {
 		"ft": 64,
 		"ma": 0,
@@ -552,13 +492,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/views/index.hbs",
-		"oF": 0
-		},
-	"/views/insertData.hbs": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/views/insertData.hbs",
 		"oF": 0
 		},
 	"/views/login.hbs": {

@@ -8,10 +8,6 @@ var Schema = mongoose.Schema;
 
 var musicSchema = mongoose.Schema({
 
-  _id: {
-    type: mongoose.Schema.Types.ObjectId,
-  },
-
   name: {
     type: String,
   },
@@ -36,28 +32,100 @@ var musicSchema = mongoose.Schema({
     type: String,
   },
 
-  software: {
-//  type: String,
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'softwares'
-  },
-
-  vst: {
-//  type: String,
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'vsts'
-
-  },
-
-  hardware: {
-//  type: String,    
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'hardwares'
-  },
-
   cover: {
     type: String,
-  }
+  },
+
+  // ==== software ==== //
+
+  software:{
+    name:{
+      type: String
+    },
+    description:{
+      type: String
+    },
+    img:{
+      type: String
+    }
+  },
+
+  // ==== vst ==== //
+
+  vst_1: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
+  vst_2: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
+  vst_3: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
+  vst_4: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
+  // ==== hardware ==== //
+
+  hardware_1: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
+  hardware_2: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
+  hardware_3: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
+  hardware_4: {
+    name: {
+      type: String
+    },
+    img: {
+      type: String
+    }
+  },
+
 });
 
 var music = mongoose.model('music', musicSchema);

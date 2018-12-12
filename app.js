@@ -38,10 +38,7 @@ app.use(bodyParser.json());
 
 // ==== Routes module ==== //
 
-const insertRoutes = require('./routes/insertData');
-
 const indexRoutes = require('./routes/index'); // ==== index ==== //
-const loginRoutes = require('./routes/login'); // ==== login ==== //
 const homeRoutes = require('./routes/home'); // ==== home ==== //
 const createSongsRoutes = require('./routes/createSongs'); // ==== createSongs ==== //
 const musicPageRoutes = require('./routes/music'); // ==== music ==== //
@@ -60,10 +57,7 @@ app.use(express.static('public'));
 
 // ==== Routes ==== //
 
-app.use('/insertData', insertRoutes);
-
 app.use('/', indexRoutes);
-app.use('/login', loginRoutes);
 app.use('/home', homeRoutes);
 app.use('/createSongs', createSongsRoutes);
 app.use('/musicPage', musicPageRoutes);
