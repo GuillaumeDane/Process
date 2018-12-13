@@ -1,8 +1,9 @@
-* {
-  font-family: sans-serif; }
-
 p {
   font-weight: 250; }
+
+body {
+  margin: 0;
+  font-family: helvetica, sans-serif; }
 
 nav {
   height: 50px;
@@ -35,19 +36,22 @@ nav {
     display: none; } }
 
 .logo {
-  background-image: url("./img/logo.svg");
+  background: url("../img/wall.jpg") #8B8B8B;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .logo .wall {
-    z-index: -1; }
+    z-index: -1;
+    height: 100%; }
   .logo img {
     position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: auto; }
+    z-index: 1; }
 
 section {
   padding-top: 30px;

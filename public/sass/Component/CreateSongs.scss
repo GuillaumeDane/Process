@@ -1,73 +1,7 @@
 // ---- Import ---- //
+
 @import "variable.scss";
-// -------- //
-// form{
-//   p{
-//     color: $yellow;
-//   }
-//   background-color: $black;
-//   .music{
-//     display: flex;
-//     flex-direction: column;
-//     input{
-//       margin: 5px;
-//       padding: 12px 20px;
-//       margin: 8px 0;
-//       border: 0;
-//     }
-//   }
-//   .soft{
-//     select{
-//       background-color: $grey;
-//       color: $yellow;
-//       border: 0;
-//     }
-//     background-color: $yellow;
-//     text-align: center;
-//     margin: 20px;
-//     padding: 20px;
-//   }
-//   .list{
-//     display: flex;
-//     justify-content: center;
-//     margin: 20px;
-//     .vst, .hard{
-//       margin-left: 20px;
-//       margin-right: 20px;
-//     }
-//   }
-//   .process{
-//     text-align: center;
-//     h2{
-//       color: white;
-//       display: flex;
-//       align-items: center;
-//       text-align: center;
-//     }
-//     img{
-//       height: 50px;
-//     }
-//     textarea{
-//       background-color: $yellow;
-//       resize: none;
-//       height: 300px;
-//       width: 80%;
-//       border: 0;
-//     }
-//   }
-//   .submit{
-//     padding: 20px;
-//     display: flex;
-//     text-align: center;
-//     justify-content: center;
-//     input{
-//       background-color: $yellow;
-//       padding: 12px 200px;
-//       margin: 8px 0;
-//       border: 0;
-//     }
-//   }
-// }
+
 // ---- unite ---- //
 input {
   width: 100%;
@@ -160,5 +94,3 @@ input {
     }
   }
 }
-
-// ==== FX ==== //

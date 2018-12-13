@@ -40,10 +40,10 @@ router.post('/', function(req, res) {
   music.vst_2.name = req.body.vst_name_2;
   music.vst_2.img = req.body.vst_img_2;
 
-  music.vst_3.img = req.body.vst_name_3;
+  music.vst_3.name = req.body.vst_name_3;
   music.vst_3.img = req.body.vst_img_3;
 
-  music.vst_4.img = req.body.vst_name_4;
+  music.vst_4.name = req.body.vst_name_4;
   music.vst_4.img = req.body.vst_img_4;
 
 // ==== hardware post ==== //

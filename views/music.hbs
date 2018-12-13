@@ -1,66 +1,97 @@
 <header>
   <nav>
-    <img src="img/logo.svg" alt="">
+    <img src="/img/logo.svg" alt="logo">
     <ul>
-      <li><a href="/">Home</a></li>
+      <li><a href="/">Home</a>
+        <a href="/delete/{{music.id}}">delete</a>
+      </li>
     </ul>
   </nav>
 </header>
 
 <main>
 
-  <section class="music">
-    <div class="cover">
-      <div class="img_info">
-        <img src="{{music.cover}}" alt="">
-      </div>
-      <div>
-        <h1>{{music.name}}</h1>
-        <h2>{{music.producer}}</h2>
-        <p>{{music.date}}</p>
-      </div>
-    </div>
-    <div class="info_info">
-      <p class="">{{music.bpm}}</p>
-      <p>{{music.tonality}}</p>
-    </div>
-  </section>
 
-  <section class="software">
-    <div class="soft_img">
-      <img src="{{software.img}}" alt="">
-    </div>
-    <div class="soft_info">
-      <h2>{{software.name}}</h2>
-      <p>{{software.description}}</p>
-    </div>
-  </section>
-
-  <section class="vst">
-    {{#each music}}
-      <div class="vst_item">
-        <div class="vst_a">
-          <img src="{{this.img}}" alt="">
-          <p class="title">{{this.vst}}</p>
+    <div class="base">
+      <div class="base-infos">
+        <div class="cover">
+          <img src="{{music.cover}}" alt="">
+        </div>
+        <div class="text">
+          <h1>{{music.producer}}</h1>
+          <h2>{{music.name}}</h2>
+          <p>{{music.bpm}} BPM</p>
+          <p>{{music.tonality}}</p>
         </div>
       </div>
-    {{/each}}
-  </section>
-
-  <section class="hardware">
-    {{#each hardware}}
-      <div class="hardware_item">
-        <img src="{{this.img}}" alt="">
-        <p class="title">{{this.name}}</p>
+      <div class="process">
+        <h3>Process</h3>
+        <p>{{music.description}}</p>
       </div>
-    {{/each}}
-  </section>
+    </div>
 
-  <div class="fx"></div>
+<div class="line_yellow"></div>
 
-  <section class="process">
-    <p>{{music.process}}</p>
-  </section>
+
+   <h3>{{music.software.name}}</h3>
+    <div class="software">
+      <div class="picture">
+        <img src="{{music.software.img}}" alt="">
+        <p class="desc">{{music.software.description}}</p>
+      </div>
+    </div>
+
+
+<div class="vst">
+  <h3>Vst</h3>
+
+    <div class="item">
+      <p>{{music.vst_1.name}}</p>
+      <img src="{{music.vst_1.img}}" alt="">
+    </div>
+
+    <div class="item">
+      <p>{{music.vst_2.name}}</p>
+      <img src="{{music.vst_2.img}}" alt="">
+    </div>
+
+    <div class="item">
+      <p>{{music.vst_3.name}}</p>
+      <img src="{{music.vst_3.img}}" alt="">
+    </div>
+
+    <div class="item">
+      <p>{{music.vst_4.name}}</p>
+      <img src="{{music.vst_4.img}}" alt="">
+    </div>
+
+</div>
+
+<div class="hardware">
+  <h3>Hardware</h3>
+
+    <div class="item">
+      <p>{{music.hardware_1.name}}</p>
+      <img src="{{music.hardware_1.img}}" alt="">
+    </div>
+
+    <div class="item">
+      <p>{{music.hardware_2.name}}</p>
+      <img src="{{music.hardware_2.img}}" alt="">
+    </div>
+
+    <div class="item">
+      <p>{{music.hardware_3.name}}</p>
+      <img src="{{music.hardware_3.img}}" alt="">
+    </div>
+
+    <div class="item">
+      <p>{{music.hardware_4.name}}</p>
+      <img src="{{music.hardware_4.img}}" alt="">
+    </div>
+
+</div>
+
 </main>
 
 <footer>
@@ -69,8 +100,8 @@
       <p>Social network:</p>
       <ul>
         <li><a href="#"><img src="/img/facebook.svg" alt=""></a></li>
-        <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
-        <li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+        <li><a href="#"><img src="/img/instagram.svg" alt=""></a></li>
+        <li><a href="#"><img src="/img/twitter.svg" alt=""></a></li>
       </ul>
     </div>
     <div class="info">

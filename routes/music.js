@@ -9,16 +9,30 @@ var musicSchema = require('../models/music');
 
 // ==== indexRoute ==== //
 
+// ==== Read ==== //
+
 router.get('/:id', function(req, res) {
-  musicSchema.findById(req.params.id, function(err, results4) {
+  musicSchema.findById(req.params.id, function(err, results) {
     if (err) {
       throw err;
     } else {
       res.render('music.hbs', {
         title: 'Music',
         css: '/css/music.css',
-        music: results4
+        music: results
       });
+    }
+  });
+});
+
+// ==== Delete ==== //
+
+router.get('/delete/:id', function(req, res) {
+  musicSchema.findByIdAndRemove(req.params.id, function(err){
+    if(err){
+      throw err;
+    } else {
+      res.redirect('home')
     }
   });
 });

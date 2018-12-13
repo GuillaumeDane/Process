@@ -5,19 +5,23 @@
 // -------- //
 
 .logo{
-  background-image: url("./img/logo.svg");
+  background: url("../img/wall.jpg") $grey;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   .wall{
     z-index: -1;
+    height: 100%;
+
   }
   img{
     position: absolute;
     z-index: 1;
-    width: 100%;
-    height: auto;
   }
 }

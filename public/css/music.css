@@ -1,8 +1,9 @@
-* {
-  font-family: sans-serif; }
-
 p {
   font-weight: 250; }
+
+body {
+  margin: 0;
+  font-family: helvetica, sans-serif; }
 
 nav {
   height: 50px;
@@ -34,83 +35,85 @@ nav {
   nav li {
     display: none; } }
 
-.music {
-  background-color: #8B8B8B;
-  justify-content: space-between;
+body {
+  background-color: #333; }
+
+h3 {
+  color: #FFDE00; }
+
+.base {
+  background: #8B8B8B;
   display: flex;
-  flex-wrap: wrap; }
-  .music .cover {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2rem; }
+  .base .base-infos {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px; }
-    .music .cover img {
+    justify-content: space-around; }
+    .base .base-infos .cover img {
       height: 300px;
       width: auto; }
+    .base .base-infos .text {
+      padding: 0 1.7em;
+      display: flex;
+      flex-direction: column; }
+  .base .process {
+    min-width: 300px;
+    flex: 1;
+    padding: 0 1.7em; }
 
 .software {
-  background-color: #FFDE00;
+  padding: 20px;
   display: flex;
-  justify-content: space-around; }
-  .software .soft_img {
-    margin: 10px; }
-  .software .soft_info {
-    text-align: center; }
-
-.vst {
-  background-color: #333;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center; }
-  .vst .vst_item {
-    position: relative;
-    padding: 0.3rem;
-    height: 300px;
-    width: 450px;
-    box-sizing: border-box; }
-    .vst .vst_item img {
-      width: auto;
-      height: 300px; }
-    .vst .vst_item .title {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      margin: 5px;
-      padding: 0px 10px;
+  .software .picture {
+    width: 80%;
+    position: relative; }
+    .software .picture .desc {
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1.7em;
+      margin: 0;
+      color: #FFDE00; }
+    .software .picture img {
+      width: 100%; }
 
-.fx {
-  height: 10px;
-  width: 100vw;
-  background-color: #FFDE00; }
-
-.hardware {
-  background-color: #333;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.vst, .hardware {
+  padding: 0 10px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .hardware .hardware_item {
+  flex-wrap: wrap; }
+  .vst h3, .hardware h3 {
+    width: 100%; }
+  .vst .item, .hardware .item {
     position: relative;
-    padding: 0.3rem;
-    height: 300px;
-    width: 300px;
-    box-sizing: border-box; }
-    .hardware .hardware_item img {
-      width: auto;
-      height: 300px; }
-    .hardware .hardware_item .title {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      margin: 5px;
-      padding: 0px 10px;
+    overflow: hidden;
+    min-width: 300px;
+    flex: 1;
+    max-height: 25vw; }
+    .vst .item img, .hardware .item img {
+      width: 100%;
+      height: auto; }
+    .vst .item p, .hardware .item p {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1.7em;
+      margin: 0;
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      left: 0;
+      min-width: 20%;
+      color: #FFDE00;
+      font-weight: bold; }
 
-.process {
-  background: #8B8B8B; }
+@media screen and (min-width: 900px) {
+  .vst .item, .hardware .item {
+    min-width: 40%; } }
+
+@media screen and (max-width: 900px) {
+  .software .picture .desc {
+    position: relative; } }
 
 footer .black_f {
   background-color: #333;
@@ -155,3 +158,25 @@ footer .yellow_f {
     font-size: 0.7em;
     color: black;
     text-decoration: none; }
+
+.effect {
+  background-color: #333; }
+  .effect .greyEffect {
+    height: 10px;
+    background-color: #8B8B8B; }
+  .effect .yellowEffect {
+    height: 10px;
+    background-color: #FFDE00;
+    transform: rotate(4deg); }
+
+.line_yellow {
+  background-color: #FFDE00;
+  height: 10px; }
+
+.line_black {
+  background-color: #333;
+  height: 10px; }
+
+.line_grey {
+  background-color: #8B8B8B;
+  height: 10px; }

@@ -2,112 +2,107 @@
 
 @import "variable.scss";
 
-// ---- Info ---- //
+body{
+  background-color: $black
+}
 
-.music{
-  background-color: $grey;
-  justify-content: space-between;
+h3{
+   color: $yellow;
+}
+
+.base{
+  background: $grey;
   display: flex;
   flex-wrap: wrap;
-  .cover{
+  justify-content: space-around;
+  padding-top: 2rem;
+  .base-infos{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-    img{
-      height: 300px;
-      width: auto;
+    justify-content: space-around;
+    .cover{
+      img{
+        height: 300px;
+        width: auto;
+      }
+    }
+    .text{
+      padding: 0 1.7em;
+      display: flex;
+      flex-direction: column;
     }
   }
+  .process{
+  min-width: 300px;
+    flex: 1;
+    padding: 0 1.7em
+  }
 }
-
-// ---- software ---- //
 
 .software{
-  background-color: $yellow;
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
-  .soft_img{
-    margin: 10px;
-  }
-  .soft_info{
-    text-align: center;
-  }
-}
-
-// ---- vst ---- //
-
-.vst{
-  background-color: $black;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  .vst_item{
+  .picture{
+    width: 80%;
     position: relative;
-    padding: 0.3rem;
-    height: 300px;
-    width: 450px;
-    box-sizing:border-box;
-
-    img{
-      width: auto;
-      height: 300px;
-    }
-
-    .title{
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      margin: 5px;
-      padding: 0px 10px;
+    .desc{
       position: absolute;
       bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1.7em;
+      margin: 0;
+      color: $yellow;
     }
+    img{
+    width: 100%;
+  }
   }
 }
 
-// ---- fx ---- //
-
-.fx{
-  height: 10px;
-  width: 100vw;
-  background-color: $yellow;
-}
-
-// ---- hardware ---- //
-
-.hardware{
-  background-color: $black;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.vst, .hardware{
+  padding: 0 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  .hardware_item{
+  h3{
+    width: 100%;
+  }
+  .item{
     position: relative;
-    padding: 0.3rem;
-    height: 300px;
-    width: 300px;
-    box-sizing:border-box;
-
+    overflow: hidden;
+    min-width: 300px;
+    flex: 1;
+    max-height: 25vw;
     img{
-      width: auto;
-      height: 300px;
+      width: 100%;
+      height: auto;
     }
-
-    .title{
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      margin: 5px;
-      padding: 0px 10px;
+    p{
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1.7em;
+      margin: 0;
       position: absolute;
       bottom: 0;
+      left: 0;
+      min-width: 20%;
+      color: $yellow;
+      font-weight: bold;
     }
   }
 }
 
-// ---- process ---- //
+@media screen and (min-width: 900px) {
+  .vst,.hardware{
+    .item{
+      min-width: 40%;
+    }
+  }
+}
 
-.process{
-  background: $grey;
+@media screen and (max-width: 900px) {
+
+  .software .picture .desc{
+    position: relative;
+  }
 }

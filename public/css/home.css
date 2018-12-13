@@ -1,8 +1,9 @@
-* {
-  font-family: sans-serif; }
-
 p {
   font-weight: 250; }
+
+body {
+  margin: 0;
+  font-family: helvetica, sans-serif; }
 
 nav {
   height: 50px;
