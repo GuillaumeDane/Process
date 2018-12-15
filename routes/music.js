@@ -25,18 +25,6 @@ router.get('/:id', function(req, res) {
   });
 });
 
-// ==== Delete ==== //
-
-router.get('/delete/:id', function(req, res) {
-  musicSchema.findByIdAndRemove(req.params.id, function(err){
-    if(err){
-      throw err;
-    } else {
-      res.redirect('home')
-    }
-  });
-});
-
 // ==== Export ==== //
 
 module.exports = router;
